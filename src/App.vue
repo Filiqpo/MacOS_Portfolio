@@ -1,4 +1,5 @@
 <script setup>
+import Dock from "#components/Dock.vue";
 import Navbar from "#components/Navbar.vue";
 import Welcome from "#components/Welcome.vue";
 </script>
@@ -7,6 +8,7 @@ import Welcome from "#components/Welcome.vue";
   <main>
     <Navbar />
     <Welcome />
+    <Dock />
   </main>
 </template>
 
