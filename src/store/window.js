@@ -1,4 +1,3 @@
-// stores/windowStore.js
 import { defineStore } from "pinia";
 import { WINDOW_CONFIG, INITIAL_Z_INDEX } from "#const";
 
