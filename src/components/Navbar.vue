@@ -1,6 +1,9 @@
 <script setup>
 import { navLinks, navIcons } from "#const";
 import dayjs from "dayjs";
+import { useWindowStore } from "#store/window";
+
+const { openWindow } = useWindowStore();
 </script>
 
 <template>
@@ -10,7 +13,12 @@ import dayjs from "dayjs";
       <p class="font-bold">Filippo's Portfolio</p>
 
       <ul>
-        <li v-for="{ id, name } in navLinks" :key="navLinks">
+        <li
+          v-for="{ id, name, type } in navLinks"
+          :key="id"
+          @click="openWindow(type)"
+          class="cursor-pointer"
+        >
           <p>{{ name }}</p>
         </li>
       </ul>
@@ -18,7 +26,12 @@ import dayjs from "dayjs";
 
     <div>
       <ul>
-        <li v-for="{ id, img } in navIcons" :key="navIcons">
+        <li
+          v-for="{ id, img, type } in navIcons"
+          :key="id"
+          @click="openWindow(type)"
+          class="cursor-pointer"
+        >
           <img class="icon-hover" :src="img" :alt="`icon-${id}`" />
         </li>
       </ul>
