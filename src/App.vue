@@ -2,6 +2,7 @@
 import Dock from "#components/Dock.vue";
 import Navbar from "#components/Navbar.vue";
 import Welcome from "#components/Welcome.vue";
+import Terminal from "#windows/Terminal.vue";
 </script>
 
 <template>
@@ -9,6 +10,8 @@ import Welcome from "#components/Welcome.vue";
     <Navbar />
     <Welcome />
     <Dock />
+
+    <Terminal />
   </main>
 </template>
 

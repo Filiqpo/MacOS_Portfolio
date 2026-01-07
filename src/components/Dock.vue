@@ -2,9 +2,21 @@
 import { ref, onMounted, onUnmounted } from "vue";
 import { dockApps } from "#const";
 import gsap from "gsap";
+import { useWindowStore } from "#store/window";
 
+const { openWindow, closeWindow, windows } = useWindowStore();
 const dockRef = ref(null);
-const toggleApp = (app) => {};
+const toggleApp = (app) => {
+  if (!app.canOpen) return;
+
+  const window = windows[app.id];
+
+  if (window.isOpen) {
+    closeWindow(app.id);
+  } else {
+    openWindow(app.id);
+  }
+};
 
 let cleanupFn = null;
 
