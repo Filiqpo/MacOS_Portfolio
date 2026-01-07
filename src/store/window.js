@@ -19,6 +19,8 @@ export const useWindowStore = defineStore("window", {
 
     closeWindow(windowKey) {
       const win = this.windows[windowKey];
+      if (!win) return;
+
       win.isOpen = false;
       win.zIndex = INITIAL_Z_INDEX;
       win.data = null;
@@ -26,6 +28,8 @@ export const useWindowStore = defineStore("window", {
 
     focusWindow(windowKey) {
       const win = this.windows[windowKey];
+      if (!win) return;
+
       win.zIndex = this.nextZIndex++;
     },
   },
