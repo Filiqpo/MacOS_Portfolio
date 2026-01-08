@@ -7,6 +7,8 @@ import Curriculum from "#windows/Curriculum.vue";
 import Finder from "#windows/Finder.vue";
 import Text from "#windows/Text.vue";
 import Image from "#windows/Image.vue";
+import Contact from "#windows/Contact.vue";
+import Home from "#components/Home.vue";
 </script>
 
 <template>
@@ -20,6 +22,8 @@ import Image from "#windows/Image.vue";
     <Finder />
     <Text />
     <Image />
+    <Contact />
+    <Home />
   </main>
 </template>
 

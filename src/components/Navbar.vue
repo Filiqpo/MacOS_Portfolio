@@ -35,7 +35,7 @@ const { openWindow } = useWindowStore();
           <img class="icon-hover" :src="img" :alt="`icon-${id}`" />
         </li>
       </ul>
-      <time>{{ dayjs().format("ddd MMM D h:mm A") }}</time>
+      <time>{{ dayjs().format("ddd D MMM hh:mm A") }}</time>
     </div>
   </nav>
 </template>

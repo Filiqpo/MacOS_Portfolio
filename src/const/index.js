@@ -91,7 +91,86 @@ const techStack = [
   },
 ];
 
-export { navLinks, navIcons, dockApps, techStack };
+const socials = [
+  {
+    id: 1,
+    text: "Github",
+    icon: "/icons/github.svg",
+    bg: "#f4656b",
+    link: "https://github.com/Filiqpo",
+  },
+  {
+    id: 2,
+    text: "Instagram",
+    icon: "/icons/insta.svg",
+    bg: "#4bcb63",
+    link: "https://www.instagram.com/filiqpoo/",
+  },
+  {
+    id: 3,
+    text: "LinkedIn",
+    icon: "/icons/linkedin.svg",
+    bg: "#05b6f6",
+    link: "https://www.linkedin.com/in/filippo-comelato-b3a1ba21b/",
+  },
+];
+
+const photosLinks = [
+  {
+    id: 1,
+    icon: "/icons/gicon1.svg",
+    title: "Library",
+  },
+  {
+    id: 2,
+    icon: "/icons/gicon2.svg",
+    title: "Memories",
+  },
+  {
+    id: 3,
+    icon: "/icons/file.svg",
+    title: "Places",
+  },
+  {
+    id: 4,
+    icon: "/icons/gicon4.svg",
+    title: "People",
+  },
+  {
+    id: 5,
+    icon: "/icons/gicon5.svg",
+    title: "Favorites",
+  },
+];
+
+const gallery = [
+  {
+    id: 1,
+    img: "/images/",
+  },
+  {
+    id: 2,
+    img: "/images/",
+  },
+  {
+    id: 3,
+    img: "/images/",
+  },
+  {
+    id: 4,
+    img: "/images/",
+  },
+];
+
+export {
+  navLinks,
+  navIcons,
+  dockApps,
+  techStack,
+  socials,
+  photosLinks,
+  gallery,
+};
 
 const WORK_LOCATION = {
   id: 1,
@@ -107,7 +186,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5",
-      windowPosition: "top-[5vh] left-5",
+      windowPosition: "top-[60vh] left-30",
       children: [
         {
           id: 1,
@@ -150,7 +229,7 @@ const WORK_LOCATION = {
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-52 right-80",
-      windowPosition: "top-[20vh] left-7",
+      windowPosition: "top-[20vh] right-40",
       children: [
         {
           id: 1,
