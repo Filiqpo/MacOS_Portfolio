@@ -182,7 +182,7 @@ const WORK_LOCATION = {
     // ▶ Project 1
     {
       id: 5,
-      name: "Apple MacBook Pro Web Page",
+      name: "Apple MacBook Pro - Replica",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5",
@@ -262,6 +262,49 @@ const WORK_LOCATION = {
           fileType: "img",
           position: "top-52 left-80",
           imageUrl: "/images/project-2.png",
+        },
+      ],
+    },
+
+    // ▶ Project 3
+    {
+      id: 7,
+      name: "Apple iPhone 15 Pro - Replica",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-52 right-80",
+      windowPosition: "top-[65vh] right-75",
+      children: [
+        {
+          id: 1,
+          name: "iPhone 15 Pro.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-40 left-20",
+          description: [
+            "The Apple iPhone 15 Pro website is a stunning and immersive showcase for Apple's flagship smartphone, designed to capture the essence of premium technology and innovative design.",
+            "Instead of a standard product page, it delivers a captivating 3D experience with interactive model exploration—rotate the iPhone freely to admire every angle, switch between titanium colors in real-time, and watch as smooth scroll-triggered animations guide you through the device's highlights.",
+            "It's built with Vue.js, Three.js for stunning 3D rendering, GSAP for buttery-smooth animations, and Tailwind CSS, ensuring a refined, responsive design with that signature Apple aesthetic.",
+          ],
+        },
+        {
+          id: 2,
+          name: "iphone-15-pro.com",
+          icon: "/images/logo.svg",
+          kind: "file",
+          fileType: "url",
+          href: "https://iphone-15-pro-replica.netlify.app/",
+          position: "top-60 right-30",
+        },
+        {
+          id: 4,
+          name: "iPhone 15 Pro.png",
+          icon: "/images/project-3.jpeg",
+          kind: "file",
+          fileType: "img",
+          position: "top-20 left-55",
+          imageUrl: "/images/project-3.jpeg",
         },
       ],
     },
